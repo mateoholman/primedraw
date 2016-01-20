@@ -14,3 +14,19 @@
 /* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* Styling for the Devise forms */
+.log-in{
+  width: 700px;
+  margin:auto;
+  text-align:center;
+
+  .panel-heading{
+	  background-color:#a3a3c2;
+	}
+
+	 
+	.panel-body{
+	  background-color:#d1d1e0;
+	}
+}
