@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @project.budget %>
+</p>
+
+<p>
+  <strong>Has job code:</strong>
+  <%= @project.has_job_code %>
+</p>
+
+<p>
+  <strong>Has cost code:</strong>
+  <%= @project.has_cost_code %>
+</p>
+
+<p>
+  <strong>Has contract code:</strong>
+  <%= @project.has_contract_code %>
+</p>
+
+<p>
+  <strong>Has project budget category:</strong>
+  <%= @project.has_project_budget_category %>
+</p>
+
+<p>
+  <strong>Has lender budget category:</strong>
+  <%= @project.has_lender_budget_category %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

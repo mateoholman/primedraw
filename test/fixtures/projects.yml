@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  budget: 1
+  has_job_code: false
+  has_cost_code: false
+  has_contract_code: false
+  has_project_budget_category: false
+  has_lender_budget_category: false
+
+two:
+  name: MyString
+  description: MyText
+  budget: 1
+  has_job_code: false
+  has_cost_code: false
+  has_contract_code: false
+  has_project_budget_category: false
+  has_lender_budget_category: false

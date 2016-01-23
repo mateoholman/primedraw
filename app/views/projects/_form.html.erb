@@ -1,0 +1,49 @@
+<%= form_for(@project) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :budget %><br>
+    <%= f.number_field :budget %>
+  </div>
+  <div class="field">
+    <%= f.label :has_job_code %><br>
+    <%= f.check_box :has_job_code %>
+  </div>
+  <div class="field">
+    <%= f.label :has_cost_code %><br>
+    <%= f.check_box :has_cost_code %>
+  </div>
+  <div class="field">
+    <%= f.label :has_contract_code %><br>
+    <%= f.check_box :has_contract_code %>
+  </div>
+  <div class="field">
+    <%= f.label :has_project_budget_category %><br>
+    <%= f.check_box :has_project_budget_category %>
+  </div>
+  <div class="field">
+    <%= f.label :has_lender_budget_category %><br>
+    <%= f.check_box :has_lender_budget_category %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
