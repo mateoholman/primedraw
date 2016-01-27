@@ -19,12 +19,12 @@ ActiveRecord::Schema.define(version: 20160122034400) do
   create_table "projects", force: true do |t|
     t.string   "name"
     t.text     "description"
-    t.integer  "budget"
-    t.boolean  "has_job_code"
-    t.boolean  "has_cost_code"
-    t.boolean  "has_contract_code"
-    t.boolean  "has_project_budget_category"
-    t.boolean  "has_lender_budget_category"
+    t.integer  "budget",                      default: 0
+    t.boolean  "has_job_code",                default: false
+    t.boolean  "has_cost_code",               default: false
+    t.boolean  "has_contract_code",           default: false
+    t.boolean  "has_project_budget_category", default: true
+    t.boolean  "has_lender_budget_category",  default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
