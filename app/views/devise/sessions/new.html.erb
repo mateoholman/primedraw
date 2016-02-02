@@ -1,5 +1,4 @@
 <!--Style the sign-in form with Bootstrap-->
-
 <div class="container log-in">
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -9,6 +8,9 @@
 <div class="panel-body">
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+    <%= render 'layouts/messages' %>
+
     <div class="field">
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true %>

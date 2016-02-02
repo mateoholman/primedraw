@@ -27,6 +27,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use Devise for authentication
 gem 'devise'
+# Use CanCanCan for authorization
+gem 'cancancan'
+# User rolify for User roles
+gem 'rolify'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
